@@ -1,0 +1,127 @@
+.table-container {
+    background-color: #e9eaed;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 16px 0px;
+    border-radius: 24px;
+    gap: 16px;
+
+}
+
+.table-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+    width: 48%;
+    border-radius: 24px;
+    background-color: #cccdd3;
+    align-items: center;
+}
+
+.table-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    padding-bottom: 24px;
+}
+
+.card-number {
+
+    height: 60px;
+    background-color: #7eaac733;
+    border-radius: 24px;
+    padding: 4px 12px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    display: flex;
+    gap: 5px;
+    color: #356483;
+}
+
+.Status {
+    gap: 16px;
+    height: 60px;
+    background-color: #7eaac733;
+    border-radius: 24px;
+    padding: 4px 12px;
+    align-items: center;
+    justify-content: center;
+    color: #356483;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 24px;
+}
+
+.table-info {
+    display: flex;
+    gap: 16px
+}
+
+.countdown-timer {
+    border: 2px dashed #333;
+    border-radius: 16px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+
+.countdown-timer h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.countdown-timer .time {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.countdown-timer .time span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+}
+
+.countdown-timer .time span small {
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    .Status {
+        font-size: 18px; /* Màn hình nhỏ hơn 768px */
+    }
+}
+
+@media (max-width: 476px) {
+    .Status {
+        font-size: 16px; /* Màn hình nhỏ hơn 576px */
+    }
+    .detail-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 15px;
+        width: 100%;
+        border-radius: 24px;
+        background-color: #cccdd3;
+        align-items: center;
+    }
+}
